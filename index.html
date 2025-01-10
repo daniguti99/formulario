@@ -9,15 +9,15 @@
     <h1>Formulario Inscripción Alumnado Dual</h1>
 </header>
 <body>
-    <form action="registroCorrecto.html">
+    <form action="registroCorrecto.html" method="">
         <fieldset>
             <legend>Datos Personales</legend>
 
             <label for="nombre" >Nombre</label> <br>
-            <input type="text" id="nombre" name="nombre" maxlength="30" >
+            <input type="text" id="nombre" name="nombre" maxlength="30" required>
             <br>
             <label for="apellidos" >Apellidos</label> <br>
-            <input type="text" id="apellidos" name="apellidos" maxlength="80" >
+            <input type="text" id="apellidos" name="apellidos" maxlength="80" required>
             <br>
             <label for="edad">Edad</label> <br>
             <input type="number" id="edad" name="edad" maxlength="3" >
@@ -36,7 +36,7 @@
 
             <label for="provincia">Provincia</label> 
             <select id="provincia" name="provincia">
-                <option value="sevilla">Sevilla</option>
+                <option value="sevilla" selected>Sevilla</option>
                 <option value="malaga">Málaga</option>
                 <option value="cadiz">Cádiz</option>
                 <option value="jaen">Jaén</option>
@@ -51,9 +51,9 @@
             <input type="file" name="curriculum" id="curriculum"> <br> <br>
             <label for="observaciones">Observaciones</label> <br>
             <textarea name="observaciones" id="observaciones" rows="10" cols="60"></textarea> <br><br>
-            
-            <button type="submit">Enviar</button>
         </fieldset>
+        <br>
+            <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
